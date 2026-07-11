@@ -10,7 +10,7 @@
       <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#123a72" flood-opacity=".16"/>
     </filter>
   </defs>
-  <rect width="720" height="560" rx="38" fill="url(#bg)"/>
+  <rect width="720" height="600" rx="38" fill="url(#bg)"/>
 
   <rect x="200" y="20" width="315" height="52" rx="26" fill="#ffffff" stroke="#bfd1ef"/>
   <text x="360" y="53" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#173f87">¿Qué problema le da sentido?</text>
