@@ -35,7 +35,7 @@
       <path d="M-45 26h90" stroke="#86a8de" stroke-width="8" stroke-linecap="round"/>
       <text y="98" font-size="20" fill="#173f87">cociente</text>
     </g>
-    <g transform="translate(620 300)">
+    <g transform="translate(620 400)">
       <circle r="72" fill="#ffffff" stroke="#2b65c8" stroke-width="4"/>
       <path d="M-42 18h84M-36 18v-14M0 18v-14M36 18v-14" stroke="#2b65c8" stroke-width="5"/>
       <circle cx="27" cy="18" r="9" fill="#f08a5d"/>
