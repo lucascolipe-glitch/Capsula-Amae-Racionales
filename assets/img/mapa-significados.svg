@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 520" role="img" aria-labelledby="t d">
+<title id="t">Mapa conceptual de los significados de la fracción</title>
+<desc id="d">Cinco significados se conectan mediante las ideas de unidad, comparación, reparto, ubicación y transformación.</desc>
+<rect width="980" height="520" rx="28" fill="#f7faff"/>
+<g font-family="Arial, sans-serif">
+  <rect x="365" y="205" width="250" height="110" rx="28" fill="#173f87"/>
+  <text x="490" y="248" text-anchor="middle" font-size="24" font-weight="700" fill="#fff">FRACCIÓN</text>
+  <text x="490" y="280" text-anchor="middle" font-size="17" fill="#dce9ff">misma escritura, usos diferentes</text>
+  <g stroke="#8aa9db" stroke-width="4" fill="none"><path d="M365 235L230 125"/><path d="M615 235L750 125"/><path d="M365 285L215 395"/><path d="M615 285L765 395"/><path d="M490 205V90"/></g>
+  <g font-size="18" font-weight="700" text-anchor="middle">
+    <g><rect x="365" y="32" width="250" height="76" rx="20" fill="#fff" stroke="#2b65c8" stroke-width="3"/><text x="490" y="63" fill="#173f87">MEDIDA</text><text x="490" y="88" font-size="14" font-weight="400" fill="#4b607f">ubicar y cuantificar con una unidad</text></g>
+    <g><rect x="70" y="73" width="265" height="96" rx="20" fill="#fff" stroke="#2b65c8" stroke-width="3"/><text x="202" y="108" fill="#173f87">PARTE-TODO</text><text x="202" y="136" font-size="14" font-weight="400" fill="#4b607f">relacionar una parte con una unidad</text></g>
+    <g><rect x="645" y="73" width="265" height="96" rx="20" fill="#fff" stroke="#2b65c8" stroke-width="3"/><text x="777" y="108" fill="#173f87">COCIENTE</text><text x="777" y="136" font-size="14" font-weight="400" fill="#4b607f">expresar el resultado de un reparto</text></g>
+    <g><rect x="55" y="350" width="280" height="106" rx="20" fill="#fff" stroke="#2b65c8" stroke-width="3"/><text x="195" y="388" fill="#173f87">RAZÓN</text><text x="195" y="416" font-size="14" font-weight="400" fill="#4b607f">comparar cantidades sin un todo único</text></g>
+    <g><rect x="645" y="350" width="280" height="106" rx="20" fill="#fff" stroke="#2b65c8" stroke-width="3"/><text x="785" y="388" fill="#173f87">OPERADOR</text><text x="785" y="416" font-size="14" font-weight="400" fill="#4b607f">transformar una cantidad o magnitud</text></g>
+  </g>
+  <text x="490" y="490" text-anchor="middle" font-size="16" fill="#4b607f">Las fronteras no son rígidas: un mismo problema puede activar más de un significado.</text>
+</g>
+</svg>

@@ -1,0 +1,646 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Cápsula interactiva de AMAE sobre la enseñanza de fracciones, decimales y números racionales.">
+  <meta name="theme-color" content="#173f87">
+  <title>Una misma escritura, muchos sentidos | AMAE</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <a class="saltar-contenido" href="#contenido-principal">Saltar al contenido</a>
+
+  <header class="barra-superior" aria-label="Navegación principal">
+    <div class="barra-contenido">
+      <button class="marca" type="button" data-ir="inicio" aria-label="Ir a la portada">
+        <span class="marca-simbolo" aria-hidden="true">⅗</span>
+        <span><strong>AMAE</strong><small>Racionales como asunto de enseñanza</small></span>
+      </button>
+      <nav class="acciones-globales" aria-label="Accesos de la cápsula">
+        <button type="button" class="boton-texto" data-ir="mapa">Mapa</button>
+        <button type="button" class="boton-texto" data-ir="bitacora">Bitácora</button>
+        <button type="button" class="boton-texto" data-ir="bibliografia">Fuentes</button>
+      </nav>
+    </div>
+    <div class="progreso-global" aria-label="Progreso del recorrido">
+      <span id="progreso-global-barra"></span>
+    </div>
+  </header>
+
+  <noscript>
+    <div class="aviso-noscript">Esta cápsula necesita JavaScript para controlar las etapas, guardar la bitácora y ofrecer devoluciones interactivas.</div>
+  </noscript>
+
+  <main id="contenido-principal">
+    <!-- ================================================================
+         PORTADA / HERO
+         ================================================================ -->
+    <section id="inicio" class="pantalla activa hero" aria-labelledby="titulo-principal">
+      <div class="hero-texto">
+        <p class="eyebrow">Actividad matemática como asunto de enseñanza · P. U. en Matemática · UNCo</p>
+        <h1 id="titulo-principal">Una misma escritura,<br><span>muchos sentidos</span></h1>
+        <p class="bajada">Estudiar los números racionales para enseñar: una experiencia por etapas que combina problemas, lectura teórica, análisis de respuestas de inteligencia artificial y producción de argumentos.</p>
+        <div class="pregunta-central">
+          <span aria-hidden="true">?</span>
+          <p>¿Qué tiene que ocurrir para que <strong>a/b</strong> deje de ser una regla escrita y se convierta en una herramienta para repartir, medir, comparar y transformar?</p>
+        </div>
+        <div class="grupo-botones">
+          <button type="button" class="boton primario" data-ir="mapa">Comenzar el recorrido</button>
+          <button type="button" class="boton secundario" data-ir="proposito">Conocer el propósito</button>
+        </div>
+        <p class="microaviso">El avance se guarda únicamente en este navegador. Las etapas se habilitan con códigos entregados por el profesor.</p>
+      </div>
+      <div class="hero-imagen">
+        <img src="assets/img/hero-fracciones.svg" alt="La fracción tres cuartos conectada con cinco significados: parte-todo, cociente, medida, razón y operador.">
+      </div>
+    </section>
+
+    <!-- ================================================================
+         PROPÓSITO
+         ================================================================ -->
+    <section id="proposito" class="pantalla seccion-ancha" aria-labelledby="titulo-proposito" aria-hidden="true">
+      <div class="encabezado-seccion">
+        <p class="eyebrow">Antes de abrir el mapa</p>
+        <h2 id="titulo-proposito">Un recorrido para desnaturalizar lo conocido</h2>
+        <p>La propuesta parte de una tensión: quienes estudian para ser profesores ya saben operar con fracciones, pero ese dominio puede ocultar la variedad de problemas, representaciones y decisiones didácticas que constituyen al número racional.</p>
+      </div>
+
+      <div class="rejilla-3">
+        <article class="tarjeta">
+          <span class="icono-tarjeta" aria-hidden="true">⌁</span>
+          <h3>Problematizar</h3>
+          <p>Reconocer que los errores no son azarosos: pueden expresar conocimientos anteriores que resultan productivos en un dominio y limitados en otro.</p>
+        </article>
+        <article class="tarjeta">
+          <span class="icono-tarjeta" aria-hidden="true">⇄</span>
+          <h3>Confrontar</h3>
+          <p>Usar la respuesta de una IA como borrador para discutir qué significados privilegia, qué reduce y qué dimensión didáctica deja fuera.</p>
+        </article>
+        <article class="tarjeta">
+          <span class="icono-tarjeta" aria-hidden="true">✎</span>
+          <h3>Producir</h3>
+          <p>Construir explicaciones, anticipar procedimientos y tomar decisiones de enseñanza, en lugar de limitarse a repetir definiciones o algoritmos.</p>
+        </article>
+      </div>
+
+      <aside class="frase-destacada">
+        <p>La pregunta no es solamente <em>qué es una fracción</em>, sino <strong>qué situaciones permiten que sus distintos sentidos aparezcan, se relacionen y sean necesarios</strong>.</p>
+      </aside>
+
+      <div class="objetivos">
+        <h3>Al finalizar, se espera que puedas</h3>
+        <ul class="lista-check">
+          <li>distinguir y relacionar los significados parte-todo, cociente, medida, razón y operador;</li>
+          <li>analizar críticamente una producción de IA desde criterios matemáticos y didácticos;</li>
+          <li>anticipar obstáculos vinculados con el pasaje de naturales y enteros a racionales;</li>
+          <li>explicar por qué una propuesta organiza actividad matemática y no sólo ejercitación técnica;</li>
+          <li>revisar tu propia concepción de la enseñanza de fracciones.</li>
+        </ul>
+      </div>
+
+      <div class="grupo-botones centrado">
+        <button type="button" class="boton primario" data-ir="mapa">Ir al mapa</button>
+        <button type="button" class="boton enlace" data-ir="inicio">Volver a la portada</button>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         MAPA DE NAVEGACIÓN Y DESBLOQUEO
+         ================================================================ -->
+    <section id="mapa" class="pantalla seccion-ancha" aria-labelledby="titulo-mapa" aria-hidden="true">
+      <div class="encabezado-seccion compacto">
+        <p class="eyebrow">Cuatro etapas obligatorias · recorridos internos no lineales</p>
+        <h2 id="titulo-mapa">Mapa del estudio</h2>
+        <p>Dentro de cada etapa podés elegir el orden de los recursos. Para abrir una nueva etapa, primero completá la anterior y luego ingresá el código que entrega el profesor.</p>
+      </div>
+
+      <div class="resumen-progreso" aria-live="polite">
+        <div>
+          <strong id="contador-etapas">0 de 4 etapas completadas</strong>
+          <span id="mensaje-progreso">Ingresá el primer código para comenzar.</span>
+        </div>
+        <button type="button" class="boton mini secundario" id="reiniciar-recorrido">Reiniciar recorrido</button>
+      </div>
+
+      <div class="mapa-nodos" id="mapa-nodos">
+        <article class="nodo-mapa" data-nodo-card="1">
+          <div class="nodo-numero">01</div>
+          <span class="nodo-icono" aria-hidden="true">◈</span>
+          <div class="nodo-contenido">
+            <p class="estado-nodo" data-estado-nodo="1">Bloqueado</p>
+            <h3>La IA arma el primer mapa</h3>
+            <p>¿Una tabla ordenada alcanza para comprender la complejidad de una fracción?</p>
+            <div class="desbloqueo" data-desbloqueo="1">
+              <label for="codigo-1">Código de la etapa 1</label>
+              <div class="fila-codigo">
+                <input id="codigo-1" type="password" inputmode="text" autocomplete="off" aria-describedby="mensaje-codigo-1">
+                <button type="button" class="boton mini primario" data-validar-codigo="1">Habilitar</button>
+              </div>
+              <p id="mensaje-codigo-1" class="mensaje-codigo" aria-live="polite"></p>
+            </div>
+            <button type="button" class="boton mini entrar-nodo" data-entrar-nodo="1" hidden>Entrar a la etapa</button>
+          </div>
+        </article>
+
+        <article class="nodo-mapa" data-nodo-card="2">
+          <div class="nodo-numero">02</div>
+          <span class="nodo-icono" aria-hidden="true">⅗</span>
+          <div class="nodo-contenido">
+            <p class="estado-nodo" data-estado-nodo="2">Bloqueado</p>
+            <h3>Cinco sentidos, una escritura</h3>
+            <p>¿Qué cambia cuando cambia el problema, la unidad o la relación entre cantidades?</p>
+            <div class="desbloqueo" data-desbloqueo="2">
+              <label for="codigo-2">Código de la etapa 2</label>
+              <div class="fila-codigo">
+                <input id="codigo-2" type="password" autocomplete="off" aria-describedby="mensaje-codigo-2">
+                <button type="button" class="boton mini primario" data-validar-codigo="2">Habilitar</button>
+              </div>
+              <p id="mensaje-codigo-2" class="mensaje-codigo" aria-live="polite"></p>
+            </div>
+            <button type="button" class="boton mini entrar-nodo" data-entrar-nodo="2" hidden>Entrar a la etapa</button>
+          </div>
+        </article>
+
+        <article class="nodo-mapa" data-nodo-card="3">
+          <div class="nodo-numero">03</div>
+          <span class="nodo-icono" aria-hidden="true">↗</span>
+          <div class="nodo-contenido">
+            <p class="estado-nodo" data-estado-nodo="3">Bloqueado</p>
+            <h3>Escalar cambia el problema</h3>
+            <p>¿Por qué un mismo factor no produce el mismo efecto en longitudes, áreas y volúmenes?</p>
+            <div class="desbloqueo" data-desbloqueo="3">
+              <label for="codigo-3">Código de la etapa 3</label>
+              <div class="fila-codigo">
+                <input id="codigo-3" type="password" autocomplete="off" aria-describedby="mensaje-codigo-3">
+                <button type="button" class="boton mini primario" data-validar-codigo="3">Habilitar</button>
+              </div>
+              <p id="mensaje-codigo-3" class="mensaje-codigo" aria-live="polite"></p>
+            </div>
+            <button type="button" class="boton mini entrar-nodo" data-entrar-nodo="3" hidden>Entrar a la etapa</button>
+          </div>
+        </article>
+
+        <article class="nodo-mapa" data-nodo-card="4">
+          <div class="nodo-numero">04</div>
+          <span class="nodo-icono" aria-hidden="true">⌘</span>
+          <div class="nodo-contenido">
+            <p class="estado-nodo" data-estado-nodo="4">Bloqueado</p>
+            <h3>De la técnica al estudio</h3>
+            <p>¿Qué decisiones permiten que los estudiantes asuman responsabilidad sobre sus respuestas?</p>
+            <div class="desbloqueo" data-desbloqueo="4">
+              <label for="codigo-4">Código de la etapa 4</label>
+              <div class="fila-codigo">
+                <input id="codigo-4" type="password" autocomplete="off" aria-describedby="mensaje-codigo-4">
+                <button type="button" class="boton mini primario" data-validar-codigo="4">Habilitar</button>
+              </div>
+              <p id="mensaje-codigo-4" class="mensaje-codigo" aria-live="polite"></p>
+            </div>
+            <button type="button" class="boton mini entrar-nodo" data-entrar-nodo="4" hidden>Entrar a la etapa</button>
+          </div>
+        </article>
+      </div>
+
+      <aside id="acceso-sintesis" class="tarjeta-sintesis bloqueada" aria-live="polite">
+        <div>
+          <span class="nodo-icono" aria-hidden="true">✓</span>
+          <h3>Síntesis interactiva</h3>
+          <p>Se habilita cuando las cuatro etapas están completas.</p>
+        </div>
+        <button type="button" class="boton primario" data-ir="actividad" id="boton-sintesis" disabled>Resolver los tres casos</button>
+      </aside>
+
+      <div class="grupo-botones centrado">
+        <button type="button" class="boton enlace" data-ir="inicio">Volver a la portada</button>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         ETAPA 1: IA
+         ================================================================ -->
+    <section id="nodo-1" class="pantalla seccion-ancha nodo" aria-labelledby="titulo-nodo-1" aria-hidden="true">
+      <header class="cabecera-nodo">
+        <div><p class="eyebrow">Etapa 1 · Producción inicial y sospecha</p><h2 id="titulo-nodo-1">La IA arma el primer mapa</h2></div>
+        <button type="button" class="boton mini secundario" data-ir="mapa">Volver al mapa</button>
+      </header>
+
+      <div class="introduccion-nodo">
+        <p>La consigna propone solicitar a una IA una tabla con cinco significados de la fracción y luego confrontarla con bibliografía. En esta etapa, la IA no funciona como autoridad: produce un <strong>objeto para analizar</strong>.</p>
+        <span class="etiqueta-fuente">Paráfrasis de la consigna AMAE y de los criterios de confrontación teórica</span>
+      </div>
+
+      <div class="rejilla-recurso">
+        <article class="tarjeta recurso-audio">
+          <div class="cabecera-tarjeta"><span aria-hidden="true">◉</span><h3>Escuchar antes de definir</h3></div>
+          <p>El audio introduce por qué una misma escritura puede organizar situaciones diferentes.</p>
+          <audio controls preload="metadata">
+            <source src="assets/audio/guia-significados.wav" type="audio/wav">
+            Tu navegador no puede reproducir este audio.
+          </audio>
+          <details><summary>Leer la transcripción</summary><p>Una misma escritura fraccionaria puede organizar problemas muy diferentes: relacionar una parte con una unidad, expresar un reparto, ubicar una medida, comparar cantidades o transformar una magnitud. Por eso, la respuesta de una IA es un punto de partida que debe interrogarse.</p></details>
+        </article>
+
+        <article class="tarjeta">
+          <div class="cabecera-tarjeta"><span aria-hidden="true">⌨</span><h3>Constructor de prompt</h3></div>
+          <p>Marcá los componentes que querés exigir y generá una versión para copiar.</p>
+          <fieldset class="lista-opciones" id="opciones-prompt">
+            <legend class="sr-only">Componentes del prompt</legend>
+            <label><input type="checkbox" value="definición" checked> definición</label>
+            <label><input type="checkbox" value="ejemplo matemático" checked> ejemplo matemático</label>
+            <label><input type="checkbox" value="tipo de problema asociado" checked> problema asociado</label>
+            <label><input type="checkbox" value="dificultades frecuentes" checked> dificultades</label>
+            <label><input type="checkbox" value="recursos y representaciones" checked> representaciones</label>
+            <label><input type="checkbox" value="supuestos y límites de la clasificación"> supuestos y límites</label>
+          </fieldset>
+          <button type="button" class="boton mini primario" id="generar-prompt">Generar prompt</button>
+          <label for="prompt-generado" class="sr-only">Prompt generado</label>
+          <textarea id="prompt-generado" class="campo-codigo" rows="8" readonly></textarea>
+          <button type="button" class="boton mini secundario" id="copiar-prompt">Copiar</button>
+          <p id="estado-copia" class="mensaje-codigo" aria-live="polite"></p>
+        </article>
+      </div>
+
+      <div class="subtitulo-seccion"><h3>Tres puertas de entrada</h3><p>Podés abrirlas en cualquier orden.</p></div>
+      <div class="acordeones">
+        <details class="acordeon">
+          <summary><span>1</span> ¿Qué vuelve convincente a una respuesta de IA?</summary>
+          <div class="contenido-acordeon">
+            <p>La fluidez del texto no garantiza que el contenido esté bien delimitado. Una respuesta puede nombrar los cinco significados y, sin embargo, reducirlos a definiciones intercambiables, proponer siempre el mismo tipo de dibujo o no distinguir entre descripción de una relación y acción sobre una cantidad.</p>
+            <div class="preguntas-chip"><span>¿Qué unidad se toma?</span><span>¿Qué cantidades se relacionan?</span><span>¿Qué acción se realiza?</span><span>¿Qué problema origina la escritura?</span></div>
+          </div>
+        </details>
+        <details class="acordeon">
+          <summary><span>2</span> ¿Qué suele desaparecer en una tabla?</summary>
+          <div class="contenido-acordeon">
+            <p>Las tablas favorecen la comparación, pero pueden dar la impresión de que cada significado es una caja cerrada. Los materiales analizados insisten en que la comprensión se construye a largo plazo, mediante situaciones diversas y relaciones entre interpretaciones.</p>
+            <p class="nota-fuente">Paráfrasis de Llinares y Sánchez; Freudenthal; Vergnaud.</p>
+          </div>
+        </details>
+        <details class="acordeon">
+          <summary><span>3</span> ¿Qué dimensión didáctica hay que agregar?</summary>
+          <div class="contenido-acordeon">
+            <p>No basta con describir el significado matemático. También hay que anticipar qué conocimientos previos pueden sostener una estrategia, dónde dejan de funcionar, qué representaciones favorecen una discusión y qué intervenciones permiten convertir una respuesta en una explicación.</p>
+            <p class="nota-fuente">Paráfrasis de Vergnaud; Itzcovich y colaboradores; Cedrón.</p>
+          </div>
+        </details>
+      </div>
+
+      <div class="produccion">
+        <label for="nota-n1"><strong>Bitácora de la etapa 1</strong><span>Escribí dos criterios que usarías para decidir si una tabla generada por IA es didácticamente valiosa.</span></label>
+        <textarea id="nota-n1" data-bitacora="n1" rows="5" placeholder="Por ejemplo: no alcanza con que nombre los significados; necesito observar..."></textarea>
+        <p class="guardado" data-guardado="n1" aria-live="polite">Se guarda automáticamente en este dispositivo.</p>
+      </div>
+
+      <div class="cierre-nodo">
+        <button type="button" class="boton primario" data-completar-nodo="1">Marcar etapa 1 como completa</button>
+        <p id="requisito-n1" class="mensaje-requisito" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         ETAPA 2: CINCO SIGNIFICADOS
+         ================================================================ -->
+    <section id="nodo-2" class="pantalla seccion-ancha nodo" aria-labelledby="titulo-nodo-2" aria-hidden="true">
+      <header class="cabecera-nodo">
+        <div><p class="eyebrow">Etapa 2 · Núcleo principal</p><h2 id="titulo-nodo-2">Cinco sentidos, una escritura</h2></div>
+        <button type="button" class="boton mini secundario" data-ir="mapa">Volver al mapa</button>
+      </header>
+
+      <div class="introduccion-nodo con-imagen">
+        <div>
+          <p>Los cinco significados no forman una lista de sinónimos. Cada uno pone en primer plano una clase de situaciones, una relación y determinadas formas de representar. Las fronteras, sin embargo, son porosas: un reparto puede producir un cociente que luego se ubica como medida, y una escala puede leerse como razón y como operador.</p>
+          <span class="etiqueta-fuente">Síntesis basada en Freudenthal; Llinares y Sánchez; Itzcovich y colaboradores</span>
+        </div>
+        <img src="assets/img/mapa-significados.svg" alt="Mapa conceptual con los cinco significados de la fracción y sus relaciones.">
+      </div>
+
+      <p class="instruccion">Elegí cualquier tarjeta. Para completar la etapa, explorá al menos cuatro significados y realizá el laboratorio de análisis de IA.</p>
+      <div class="rejilla-significados" id="rejilla-significados">
+        <button type="button" class="tarjeta-significado" data-significado="parte-todo" aria-controls="detalle-parte-todo" aria-expanded="false">
+          <span aria-hidden="true">◩</span><strong>Parte-todo</strong><small>¿Cuál es la unidad y cómo fue particionada?</small>
+        </button>
+        <button type="button" class="tarjeta-significado" data-significado="cociente" aria-controls="detalle-cociente" aria-expanded="false">
+          <span aria-hidden="true">÷</span><strong>Cociente</strong><small>¿Qué cantidad recibe cada uno en un reparto?</small>
+        </button>
+        <button type="button" class="tarjeta-significado" data-significado="medida" aria-controls="detalle-medida" aria-expanded="false">
+          <span aria-hidden="true">⌇</span><strong>Medida</strong><small>¿Cuántas veces cabe una unidad fraccionaria?</small>
+        </button>
+        <button type="button" class="tarjeta-significado" data-significado="razon" aria-controls="detalle-razon" aria-expanded="false">
+          <span aria-hidden="true">:</span><strong>Razón</strong><small>¿Qué comparación se establece entre cantidades?</small>
+        </button>
+        <button type="button" class="tarjeta-significado" data-significado="operador" aria-controls="detalle-operador" aria-expanded="false">
+          <span aria-hidden="true">×</span><strong>Operador</strong><small>¿Qué transformación produce sobre un estado inicial?</small>
+        </button>
+      </div>
+
+      <div class="detalles-significados" aria-live="polite">
+        <article id="detalle-parte-todo" class="detalle-significado" data-detalle-significado="parte-todo" hidden>
+          <img src="assets/img/parte-todo.svg" alt="Rectángulo dividido en cuatro partes iguales con tres partes destacadas.">
+          <div><p class="etiqueta">PARTE-TODO</p><h3>Relacionar una parte con una unidad</h3><p>La escritura 3/4 puede indicar que se consideran tres partes de una unidad dividida en cuatro partes equivalentes. El significado depende de identificar con claridad cuál es el todo; contar marcas sin reconstruir la unidad puede producir respuestas como 3/12 en un reparto de tres chocolates.</p><h4>Problemas que lo movilizan</h4><p>Regiones o colecciones particionadas, comparación de una parte con el total, reconstrucción de la unidad.</p><h4>Tensión didáctica</h4><p>Es una entrada potente, pero insuficiente si queda como único modelo. Las fracciones mayores que uno, las razones parte-parte o la ubicación en la recta exigen reorganizar esa imagen.</p><p class="nota-fuente">Paráfrasis de Itzcovich y colaboradores; Llinares y Sánchez; Balladore.</p></div>
+        </article>
+        <article id="detalle-cociente" class="detalle-significado" data-detalle-significado="cociente" hidden>
+          <img src="assets/img/cociente.svg" alt="Tres pizzas repartidas equitativamente entre cinco personas.">
+          <div><p class="etiqueta">COCIENTE</p><h3>Expresar el resultado de una división</h3><p>En el reparto equitativo de tres unidades entre cinco personas, 3/5 es la cantidad que recibe cada una. La fracción no describe solamente partes ya dibujadas: expresa el resultado de una acción de dividir.</p><h4>Problemas que lo movilizan</h4><p>Reparto, medida por iteración de una cantidad, división indicada y ecuaciones del tipo 5 · x = 3.</p><h4>Tensión didáctica</h4><p>Los estudiantes pueden saber ejecutar una división y, sin embargo, no interpretar el cociente como cantidad. También deben distinguir entre cuánto recibe cada uno y cuántas porciones se forman.</p><p class="nota-fuente">Paráfrasis de Llinares y Sánchez; Itzcovich y colaboradores.</p></div>
+        </article>
+        <article id="detalle-medida" class="detalle-significado" data-detalle-significado="medida" hidden>
+          <img src="assets/img/medida.svg" alt="Recta numérica dividida en cuartos con tres cuartos señalado.">
+          <div><p class="etiqueta">MEDIDA</p><h3>Cuantificar con una unidad fraccionaria</h3><p>3/4 puede pensarse como tres iteraciones de la unidad 1/4. La recta numérica obliga a coordinar el origen, la unidad elegida, la partición y la posición, y permite tratar la fracción como número.</p><h4>Problemas que lo movilizan</h4><p>Medición de longitudes, ubicación y comparación en la recta, búsqueda de números entre otros dos.</p><h4>Tensión didáctica</h4><p>La recta no es una ilustración automática: hay que construir la unidad, conservar la escala y comprender que entre dos racionales siempre pueden encontrarse otros.</p><p class="nota-fuente">Paráfrasis de Freudenthal; Aportes para la enseñanza; Cedrón.</p></div>
+        </article>
+        <article id="detalle-razon" class="detalle-significado" data-detalle-significado="razon" hidden>
+          <img src="assets/img/razon.svg" alt="Tres círculos azules comparados con cinco círculos naranjas.">
+          <div><p class="etiqueta">RAZÓN</p><h3>Comparar cantidades</h3><p>La razón 3:5 compara dos cantidades y no requiere que una de ellas sea el todo de la otra. El orden importa: la relación de A con B no es la misma que la de B con A.</p><h4>Problemas que lo movilizan</h4><p>Mezclas, escalas, densidades, tasas, porcentajes, comparaciones parte-parte o todo-todo.</p><h4>Tensión didáctica</h4><p>Tratar toda razón como una figura sombreada puede ocultar la bidireccionalidad de la comparación y la necesidad de atender simultáneamente a dos magnitudes.</p><p class="nota-fuente">Paráfrasis de Llinares y Sánchez; Freudenthal; Aportes para la enseñanza.</p></div>
+        </article>
+        <article id="detalle-operador" class="detalle-significado" data-detalle-significado="operador" hidden>
+          <img src="assets/img/operador.svg" alt="Un segmento se transforma en otro de tres cuartos de su longitud.">
+          <div><p class="etiqueta">OPERADOR</p><h3>Transformar una cantidad o una magnitud</h3><p>Aplicar 3/4 a una cantidad produce un nuevo estado: 3/4 de 20, una reducción a escala o una transformación proporcional. El foco está en la relación entre estado inicial y estado final.</p><h4>Problemas que lo movilizan</h4><p>Ampliaciones y reducciones, porcentajes, variación relativa, escalas de planos y modelos.</p><h4>Tensión didáctica</h4><p>Decir “multiplicar por el numerador y dividir por el denominador” describe una técnica, pero no explica qué transforma, por qué funciona ni cómo se vincula con áreas o volúmenes.</p><p class="nota-fuente">Paráfrasis de Freudenthal; Llinares y Sánchez; actividad AMAE.</p></div>
+        </article>
+      </div>
+
+      <section class="laboratorio-ia" aria-labelledby="titulo-lab-ia">
+        <div class="subtitulo-seccion"><h3 id="titulo-lab-ia">Laboratorio: detectar reducciones en una respuesta de IA</h3><p>Marcá las afirmaciones que deberían ser revisadas y luego pedí la devolución.</p></div>
+        <form id="form-lab-ia">
+          <label class="afirmacion"><input type="checkbox" name="sesgo" value="a"><span><strong>A.</strong> “Toda fracción representa una parte de un todo dividido en partes iguales.”</span></label>
+          <label class="afirmacion"><input type="checkbox" name="sesgo" value="b"><span><strong>B.</strong> “Como operador, 3/4 se calcula multiplicando por 3 y dividiendo por 4.”</span></label>
+          <label class="afirmacion"><input type="checkbox" name="sesgo" value="c"><span><strong>C.</strong> “La razón y el cociente son equivalentes porque ambos se escriben a/b.”</span></label>
+          <label class="afirmacion"><input type="checkbox" name="sesgo" value="d"><span><strong>D.</strong> “Un problema puede activar más de un significado y conviene explicitar cuál se pone en primer plano.”</span></label>
+          <button type="submit" class="boton primario">Analizar selección</button>
+        </form>
+        <div id="devolucion-lab-ia" class="devolucion" aria-live="polite" hidden></div>
+      </section>
+
+      <div class="produccion">
+        <label for="nota-n2"><strong>Bitácora de la etapa 2</strong><span>Elegí dos significados y explicá una diferencia que una tabla superficial podría borrar.</span></label>
+        <textarea id="nota-n2" data-bitacora="n2" rows="5" placeholder="La diferencia entre ... y ... no está en la escritura, sino en..."></textarea>
+        <p class="guardado" data-guardado="n2" aria-live="polite">Se guarda automáticamente en este dispositivo.</p>
+      </div>
+
+      <div class="cierre-nodo">
+        <button type="button" class="boton primario" data-completar-nodo="2">Marcar etapa 2 como completa</button>
+        <p id="requisito-n2" class="mensaje-requisito" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         ETAPA 3: ESCALAS Y OPERADORES
+         ================================================================ -->
+    <section id="nodo-3" class="pantalla seccion-ancha nodo" aria-labelledby="titulo-nodo-3" aria-hidden="true">
+      <header class="cabecera-nodo">
+        <div><p class="eyebrow">Etapa 3 · Problemas de proporcionalidad y transformación</p><h2 id="titulo-nodo-3">Escalar cambia el problema</h2></div>
+        <button type="button" class="boton mini secundario" data-ir="mapa">Volver al mapa</button>
+      </header>
+
+      <div class="introduccion-nodo">
+        <p>Las actividades del rompecabezas, la fotografía, los triángulos semejantes y la impresión 3D permiten estudiar el racional como factor de transformación. También hacen visible un obstáculo frecuente: extender de manera indiscriminada relaciones válidas para longitudes a áreas y volúmenes.</p>
+        <span class="etiqueta-fuente">Síntesis de las actividades de las páginas 3 a 7 de la consigna</span>
+      </div>
+
+      <div class="video-contenedor">
+        <video controls preload="metadata" poster="assets/img/escala-cubo.svg">
+          <source src="assets/video/microvideo-escalas.mp4" type="video/mp4">
+          Tu navegador no puede reproducir este video.
+        </video>
+        <div><p class="etiqueta">MICROVIDEO · 40 s</p><h3>Longitud × k, área × k², volumen × k³</h3><p>Miralo como anticipación, no como explicación final. Después contrastá cada afirmación con los problemas.</p><details><summary>Leer idea central</summary><p>Si un factor k actúa sobre las longitudes de una figura semejante, el área cambia con k² y el volumen con k³. Por eso, duplicar el lado de un cubo multiplica su volumen por ocho.</p></details></div>
+      </div>
+
+      <div class="subtitulo-seccion"><h3>Cuatro laboratorios</h3><p>Entrá por el que te resulte más provocador.</p></div>
+      <div class="laboratorios">
+        <details class="laboratorio">
+          <summary><span aria-hidden="true">▱</span><strong>Rompecabezas 4 → 7</strong><small>Coordinación de estrategias individuales</small></summary>
+          <div class="laboratorio-contenido">
+            <img src="assets/img/rompecabezas-escala.svg" alt="Rompecabezas dividido en seis piezas y factor de escala siete cuartos.">
+            <div><p>Cada integrante amplía una pieza, pero el rompecabezas sólo vuelve a armarse si todos usan la misma relación. El factor lineal es 7/4, no “sumar 3” a cada medida.</p><ul><li>¿Qué propiedades conserva una ampliación?</li><li>¿Por qué una estrategia aditiva puede funcionar en una longitud y fracasar en las restantes?</li><li>¿Qué información devuelve el armado colectivo?</li></ul></div>
+          </div>
+        </details>
+        <details class="laboratorio">
+          <summary><span aria-hidden="true">▣</span><strong>Foto 6 × 8 en hoja 10 × 16</strong><small>Máxima ampliación sin deformar</small></summary>
+          <div class="laboratorio-contenido dos-columnas-texto">
+            <div><p>Para conservar la forma, un único factor debe respetar ambas dimensiones. Los límites son 10/6 y 16/8. El factor máximo es el menor: 5/3.</p><p class="formula-simple">6 · 5/3 = 10 &nbsp;&nbsp; y &nbsp;&nbsp; 8 · 5/3 = 40/3 ≈ 13,33</p></div>
+            <div class="pregunta-apertura"><strong>Decisión didáctica</strong><p>¿Conviene dar la fórmula del “mínimo entre cocientes” o dejar que el conflicto aparezca al probar factores? Justificá según el tipo de actividad matemática que querés promover.</p></div>
+          </div>
+        </details>
+        <details class="laboratorio">
+          <summary><span aria-hidden="true">△</span><strong>Huella, moneda y sombras</strong><small>Una referencia para reconstruir medidas</small></summary>
+          <div class="laboratorio-contenido dos-columnas-texto">
+            <div><p>Una referencia conocida permite establecer una razón entre la medida en la imagen y la medida real. En el problema de las sombras, la semejanza coordina dos razones: altura/sombra del objeto de referencia y altura/sombra del árbol.</p></div>
+            <div><ul><li>¿Qué magnitudes deben medirse?</li><li>¿Qué supuesto garantiza que las razones sean comparables?</li><li>¿Qué diferencia hay entre medir directamente y modelizar una medida?</li></ul></div>
+          </div>
+        </details>
+        <details class="laboratorio">
+          <summary><span aria-hidden="true">⬡</span><strong>Cubo e impresión 3D</strong><small>Del problema de Delos a la escala digital</small></summary>
+          <div class="laboratorio-contenido">
+            <img src="assets/img/escala-cubo.svg" alt="Esquema: longitud por k, área por k al cuadrado y volumen por k al cubo.">
+            <div><p>Un cubo de lado 4 cm tiene volumen 64 cm³. Si el lado pasa a 8 cm, el volumen es 512 cm³: ocho veces mayor. Para duplicar el volumen se necesita k³ = 2, de modo que k ≈ 1,26.</p><p>Si el filamento es proporcional al volumen y el cubo original usa 96 g, el nuevo cubo de doble volumen usará aproximadamente 192 g.</p><p class="nota-fuente">Datos y preguntas tomados de la actividad AMAE; desarrollo numérico incorporado como apoyo de diseño.</p></div>
+          </div>
+        </details>
+      </div>
+
+      <section class="simulador" aria-labelledby="titulo-simulador">
+        <div><p class="etiqueta">SIMULADOR</p><h3 id="titulo-simulador">Mové el factor de escala</h3><p>Observá cómo cambian simultáneamente las tres magnitudes.</p></div>
+        <div class="control-factor">
+          <label for="factor-escala">Factor k: <output id="salida-factor" for="factor-escala">1,25</output></label>
+          <input id="factor-escala" type="range" min="0.5" max="2" step="0.05" value="1.25">
+        </div>
+        <div class="resultados-factor" aria-live="polite">
+          <div><span>Longitud</span><strong id="factor-longitud">× 1,25</strong></div>
+          <div><span>Área</span><strong id="factor-area">× 1,56</strong></div>
+          <div><span>Volumen</span><strong id="factor-volumen">× 1,95</strong></div>
+        </div>
+      </section>
+
+      <div class="produccion">
+        <label for="nota-n3"><strong>Bitácora de la etapa 3</strong><span>Anticipá un error razonable de un estudiante y escribí una intervención que no revele de inmediato el procedimiento.</span></label>
+        <textarea id="nota-n3" data-bitacora="n3" rows="5" placeholder="Un estudiante podría pensar que... Yo preguntaría..."></textarea>
+        <p class="guardado" data-guardado="n3" aria-live="polite">Se guarda automáticamente en este dispositivo.</p>
+      </div>
+
+      <div class="cierre-nodo">
+        <button type="button" class="boton primario" data-completar-nodo="3">Marcar etapa 3 como completa</button>
+        <p id="requisito-n3" class="mensaje-requisito" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         ETAPA 4: TEORÍA Y PROCESO DE ESTUDIO
+         ================================================================ -->
+    <section id="nodo-4" class="pantalla seccion-ancha nodo" aria-labelledby="titulo-nodo-4" aria-hidden="true">
+      <header class="cabecera-nodo">
+        <div><p class="eyebrow">Etapa 4 · Confrontación y reconstrucción</p><h2 id="titulo-nodo-4">De la técnica al proceso de estudio</h2></div>
+        <button type="button" class="boton mini secundario" data-ir="mapa">Volver al mapa</button>
+      </header>
+
+      <div class="introduccion-nodo">
+        <p>La confrontación teórica no consiste en reemplazar la tabla de la IA por otra tabla “correcta”. Consiste en reconstruirla con preguntas sobre las situaciones, los obstáculos, las representaciones, las explicaciones y la organización del estudio.</p>
+      </div>
+
+      <div class="constelacion-lecturas">
+        <article class="tarjeta lectura">
+          <p class="etiqueta">FENOMENOLOGÍA</p><h3>Freudenthal</h3><p>Permite discutir el paso desde fracciones ligadas a objetos concretos y relaciones hasta la medida, la recta y el número racional. Advierte contra reducir la enseñanza al “fracturador” parte-todo.</p><a href="assets/lecturas/freudenthal_capitulo_5_fracciones.pdf" target="_blank" rel="noopener">Abrir capítulo 5 <span class="sr-only">en una pestaña nueva</span></a><p class="pregunta-lectura">¿Qué fenómenos quedan fuera si todas las fracciones se presentan con figuras sombreadas?</p>
+        </article>
+        <article class="tarjeta lectura">
+          <p class="etiqueta">PRÁCTICAS ESCOLARES</p><h3>Itzcovich y colaboradores</h3><p>Analiza el sentido de las fracciones, los errores vinculados con la unidad, las operaciones y la entrada de las expresiones decimales en clase.</p><a href="assets/lecturas/itzcovich_capitulo_5_fracciones.pdf" target="_blank" rel="noopener">Abrir selección del capítulo 5 <span class="sr-only">en una pestaña nueva</span></a><p class="pregunta-lectura">¿Qué conocimientos de los naturales siguen siendo válidos y cuáles deben reorganizarse?</p>
+        </article>
+        <article class="tarjeta lectura">
+          <p class="etiqueta">SECUENCIAS</p><h3>Aportes para la enseñanza</h3><p>Organiza problemas sobre proporcionalidad, medida, orden, densidad, producto, formulación de conjeturas y validación de propiedades.</p><a href="assets/lecturas/aportes_numeros_racionales_nivel_medio.pdf" target="_blank" rel="noopener">Abrir el material <span class="sr-only">en una pestaña nueva</span></a><p class="pregunta-lectura">¿Qué relaciones entre problemas sostienen una construcción progresiva de Q?</p>
+        </article>
+        <article class="tarjeta lectura">
+          <p class="etiqueta">CAMPO CONCEPTUAL</p><h3>Vergnaud</h3><p>Distingue la forma operatoria del conocimiento —actuar en situación— y la forma predicativa —explicitar propiedades y relaciones—, y sitúa el sentido en la actividad.</p><a href="assets/lecturas/vergnaud_campos_conceptuales.pdf" target="_blank" rel="noopener">Abrir artículo <span class="sr-only">en una pestaña nueva</span></a><p class="pregunta-lectura">¿Puede un estudiante resolver y no poder explicar? ¿Qué revela cada forma de conocimiento?</p>
+        </article>
+        <article class="tarjeta lectura">
+          <p class="etiqueta">ARGUMENTACIÓN</p><h3>Cedrón</h3><p>Estudia la producción de explicaciones sobre densidad de Q en la formación docente: representaciones diversas, discusión colectiva y acciones del profesor para sostener los argumentos.</p><a href="assets/lecturas/cedron_explicaciones_racionales.pdf" target="_blank" rel="noopener">Abrir trabajo <span class="sr-only">en una pestaña nueva</span></a><p class="pregunta-lectura">¿Cómo se transforma una resolución individual cuando se vuelve objeto de discusión colectiva?</p>
+        </article>
+        <article class="tarjeta lectura">
+          <p class="etiqueta">PROCESO DE ESTUDIO</p><h3>Chevallard, Bosch y Gascón</h3><p>Proponen mirar la enseñanza como ayuda al estudio. El profesor dirige un proceso que articula problemas, técnicas, explicaciones y teorías, sin sustituir la responsabilidad matemática de los estudiantes.</p><a href="assets/lecturas/chevallard_estudiar_matematicas.pdf" target="_blank" rel="noopener">Abrir libro <span class="sr-only">en una pestaña nueva</span></a><p class="pregunta-lectura">¿Qué cambia cuando la técnica se trabaja como respuesta a un problema y no como fin en sí mismo?</p>
+        </article>
+      </div>
+
+      <section class="tensiones" aria-labelledby="titulo-tensiones">
+        <div class="subtitulo-seccion"><h3 id="titulo-tensiones">Tensiones para revisar el cuadro de la IA</h3><p>No son “errores a borrar”, sino problemas para discutir.</p></div>
+        <div class="tabla-responsive">
+          <table>
+            <thead><tr><th>Respuesta reducida</th><th>Pregunta que abre el estudio</th><th>Decisión de enseñanza</th></tr></thead>
+            <tbody>
+              <tr><td>“Fracción es una parte de un todo.”</td><td>¿Qué sucede con 7/4, con una razón 3:5 o con un punto de la recta?</td><td>Diversificar situaciones y hacer explícita la unidad.</td></tr>
+              <tr><td>“Multiplicar siempre agranda y dividir achica.”</td><td>¿Qué ocurre al multiplicar por 3/4 o dividir por 1/2?</td><td>Confrontar anticipaciones construidas en N con casos de Q.</td></tr>
+              <tr><td>“Entre 3/5 y 4/5 no hay ninguna fracción.”</td><td>¿Qué representa el promedio? ¿Se puede repetir el procedimiento?</td><td>Trabajar orden y densidad mediante distintas representaciones.</td></tr>
+              <tr><td>“La regla da el resultado, por eso explica.”</td><td>¿Qué relaciones justifican el procedimiento y en qué problemas resulta pertinente?</td><td>Hacer circular explicaciones y discutir su alcance.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="proceso-estudio" aria-labelledby="titulo-proceso">
+        <div class="subtitulo-seccion"><h3 id="titulo-proceso">Organizar un proceso de estudio</h3><p>Una posible reconstrucción de la actividad.</p></div>
+        <ol class="pasos-estudio">
+          <li><strong>Encontrarse con una cuestión.</strong><span>Un problema hace insuficientes las técnicas disponibles o obliga a revisar su alcance.</span></li>
+          <li><strong>Explorar y producir técnicas.</strong><span>Se comparan procedimientos, representaciones, errores y resultados parciales.</span></li>
+          <li><strong>Explicar y validar.</strong><span>La clase pregunta por qué funciona, bajo qué condiciones y qué relación matemática sostiene la técnica.</span></li>
+          <li><strong>Reorganizar.</strong><span>Los conocimientos se vinculan con otras situaciones y se integran en una red más amplia.</span></li>
+          <li><strong>Volver a usar y transformar.</strong><span>La técnica se ejercita, se ajusta y se convierte en herramienta para nuevos problemas.</span></li>
+        </ol>
+        <p class="nota-fuente">Esta secuencia es una decisión de diseño inspirada en la estructura del proceso de estudio presentada por Chevallard, Bosch y Gascón; no reproduce literalmente sus “momentos del estudio”.</p>
+      </section>
+
+      <section class="pausa" aria-labelledby="titulo-pausa">
+        <div><p class="etiqueta">PAUSA REFLEXIVA</p><h3 id="titulo-pausa">Escuchar para tomar distancia</h3><p>El audio es una pieza instrumental original, creada para esta cápsula. Usalo como intervalo antes de escribir.</p></div>
+        <audio controls preload="metadata"><source src="assets/audio/pausa-reflexiva.wav" type="audio/wav">Tu navegador no puede reproducir este audio.</audio>
+        <div class="pregunta-pausa"><p id="pregunta-pausa">¿Qué parte de tu enseñanza habitual privilegia la ejecución por encima de la explicación?</p><button type="button" class="boton mini secundario" id="cambiar-pregunta">Cambiar pregunta</button></div>
+      </section>
+
+      <div class="produccion">
+        <label for="nota-n4"><strong>Bitácora de la etapa 4</strong><span>Respondé: ¿qué diferencia hay entre enseñar técnicas y organizar un proceso de estudio?</span></label>
+        <textarea id="nota-n4" data-bitacora="n4" rows="7" placeholder="Enseñar una técnica puede formar parte del proceso, pero..."></textarea>
+        <p class="guardado" data-guardado="n4" aria-live="polite">Se guarda automáticamente en este dispositivo.</p>
+      </div>
+
+      <div class="cierre-nodo">
+        <button type="button" class="boton primario" data-completar-nodo="4">Marcar etapa 4 como completa</button>
+        <p id="requisito-n4" class="mensaje-requisito" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         ACTIVIDAD INTERACTIVA FINAL: TRES CASOS
+         ================================================================ -->
+    <section id="actividad" class="pantalla seccion-media" aria-labelledby="titulo-actividad" aria-hidden="true">
+      <header class="cabecera-nodo">
+        <div><p class="eyebrow">Síntesis interactiva · tres situaciones</p><h2 id="titulo-actividad">Elegir, justificar, volver a mirar</h2></div>
+        <button type="button" class="boton mini secundario" data-ir="mapa">Volver al mapa</button>
+      </header>
+
+      <div class="actividad-progreso" aria-label="Progreso de la actividad">
+        <span id="caso-indicador">Caso 1 de 3</span>
+        <div><span id="caso-barra"></span></div>
+      </div>
+
+      <article id="tarjeta-caso" class="tarjeta-caso" aria-live="polite">
+        <p class="etiqueta" id="caso-etiqueta">COCIENTE Y UNIDAD</p>
+        <h3 id="caso-pregunta"></h3>
+        <p id="caso-contexto"></p>
+        <form id="form-caso"><fieldset><legend class="sr-only">Opciones de respuesta</legend><div id="caso-opciones" class="opciones-caso"></div></fieldset><button type="submit" class="boton primario">Confirmar respuesta</button></form>
+        <div id="caso-devolucion" class="devolucion" hidden></div>
+        <button type="button" id="siguiente-caso" class="boton secundario" hidden>Siguiente caso</button>
+      </article>
+
+      <section id="resultado-actividad" class="resultado-actividad" hidden aria-live="polite">
+        <span class="resultado-icono" aria-hidden="true">✓</span>
+        <h3>Recorrido de casos completo</h3>
+        <p id="resultado-texto"></p>
+        <p>La finalidad no es acumular aciertos, sino reconocer qué relación organiza cada situación y qué razonamiento permite justificarla.</p>
+        <div class="grupo-botones centrado"><button type="button" class="boton primario" id="reiniciar-actividad">Reiniciar actividad</button><button type="button" class="boton secundario" data-ir="bitacora">Abrir bitácora</button></div>
+      </section>
+    </section>
+
+    <!-- ================================================================
+         BITÁCORA
+         ================================================================ -->
+    <section id="bitacora" class="pantalla seccion-ancha" aria-labelledby="titulo-bitacora" aria-hidden="true">
+      <div class="encabezado-seccion compacto"><p class="eyebrow">Guardado local</p><h2 id="titulo-bitacora">Bitácora personal</h2><p>Las notas se conservan sólo en este dispositivo y en este navegador. No se envían a ningún servidor.</p></div>
+      <div class="bitacora-resumen">
+        <article><span>01</span><h3>Criterios para analizar IA</h3><p data-resumen-nota="n1">Todavía no escribiste esta nota.</p></article>
+        <article><span>02</span><h3>Diferencias entre significados</h3><p data-resumen-nota="n2">Todavía no escribiste esta nota.</p></article>
+        <article><span>03</span><h3>Error esperado e intervención</h3><p data-resumen-nota="n3">Todavía no escribiste esta nota.</p></article>
+        <article><span>04</span><h3>Técnicas y proceso de estudio</h3><p data-resumen-nota="n4">Todavía no escribiste esta nota.</p></article>
+      </div>
+      <div class="produccion">
+        <label for="nota-final"><strong>Cierre individual</strong><span>¿Qué significa enseñar fracciones desde una perspectiva centrada en la actividad matemática?</span></label>
+        <textarea id="nota-final" data-bitacora="final" rows="8" placeholder="Antes de este recorrido pensaba... Ahora considero que..."></textarea>
+        <p class="guardado" data-guardado="final" aria-live="polite">Se guarda automáticamente en este dispositivo.</p>
+      </div>
+      <div class="grupo-botones centrado">
+        <button type="button" class="boton primario" id="exportar-bitacora">Descargar bitácora en TXT</button>
+        <button type="button" class="boton secundario" id="borrar-bitacora">Borrar notas</button>
+        <button type="button" class="boton enlace" data-ir="mapa">Volver al mapa</button>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         BIBLIOGRAFÍA, CRÉDITOS Y DECLARACIÓN DE IA
+         ================================================================ -->
+    <section id="bibliografia" class="pantalla seccion-ancha" aria-labelledby="titulo-bibliografia" aria-hidden="true">
+      <div class="encabezado-seccion compacto"><p class="eyebrow">Fuentes proporcionadas por el docente</p><h2 id="titulo-bibliografia">Bibliografía, selección y créditos</h2><p>Los desarrollos teóricos de la cápsula son paráfrasis. Los fragmentos textuales breves aparecen entre comillas y se identifican como enunciados de la actividad.</p></div>
+
+      <div class="bibliografia-grid">
+        <article class="tarjeta"><h3>Lecturas núcleo incluidas</h3><ul class="referencias">
+          <li>Freudenthal, H. (2001). “Fracciones”, cap. 5 de <em>Fenomenología didáctica de las estructuras matemáticas</em> (obra original de 1983).</li>
+          <li>Itzcovich, H. (coord.), Ressia de Moreno, B., Novembre, A. y Becerril, M. M. (2008). “El trabajo escolar en torno a las fracciones”, en <em>La matemática escolar</em>.</li>
+          <li>Gobierno de la Ciudad de Buenos Aires, Ministerio de Educación, Dirección de Currícula (2006). <em>Matemática. Números racionales. Aportes para la enseñanza. Nivel Medio</em>.</li>
+          <li>Vergnaud, G. (2007). “¿En qué sentido la teoría de los campos conceptuales puede ayudarnos para facilitar aprendizaje significativo?”. <em>Investigações em Ensino de Ciências</em>, 12(2), 285–302.</li>
+          <li>Cedrón, M. (2025). <em>La producción de explicaciones matemáticas en el campo de los números racionales y su papel en las clases al inicio de la formación en el profesorado</em>. UNLP.</li>
+          <li>Chevallard, Y., Bosch, M. y Gascón, J. (1997). <em>Estudiar matemáticas. El eslabón perdido entre enseñanza y aprendizaje</em>. ICE–Horsori.</li>
+          <li>Llinares Ciscar, S. y Sánchez García, M. V. (edición consultada: 1997). <em>Fracciones. La relación parte-todo</em>. Síntesis.</li>
+        </ul></article>
+        <article class="tarjeta"><h3>Materiales complementarios analizados</h3><ul class="referencias">
+          <li>Balladore, A. M. (2020). <em>Fracciones. Dificultades a las que se enfrentan los alumnos de Ciclo Básico del Nivel Secundario</em>. Tesis, Universidad Nacional del Comahue.</li>
+          <li>Puig, G. (2025). <em>Articulación entre los Niveles Primario y Secundario en la enseñanza de las fracciones</em>. Tesis de Maestría, UNR.</li>
+          <li>Centeno Pérez, J. <em>Números decimales: ¿por qué? ¿para qué?</em>. Síntesis.</li>
+          <li>Duarte, B. (coord.) et al. (2023). <em>Los números reales en la escuela secundaria. Una secuencia posible</em>. UNIPE–OEI.</li>
+          <li>Vergnaud, G. (1988). “Theoretical Frameworks and Empirical Facts in the Psychology of Mathematics Education”. ICME 6.</li>
+          <li>Agrasar, M. y Chemello, G. (eds.) (2021). <em>Entre docentes I. Matemática para el aula de ciclo básico de secundaria</em>. UNIPE.</li>
+        </ul><p class="nota-fuente">El archivo “Documento_completo.pdf” y el archivo con el título de Cedrón contienen el mismo trabajo; se analizaron como un único material.</p></article>
+      </div>
+
+      <div class="lecturas-enlaces">
+        <a href="assets/lecturas/consigna_fracciones_racionales.pdf" target="_blank" rel="noopener">Consigna focal: páginas 1–7</a>
+        <a href="assets/lecturas/llinares_sanchez_interpretaciones_fracciones.pdf" target="_blank" rel="noopener">Selección sobre interpretaciones</a>
+        <a href="assets/lecturas/chevallard_estudiar_matematicas.pdf" target="_blank" rel="noopener">Proceso de estudio</a>
+      </div>
+
+      <div class="creditos">
+        <div><h3>Autoría educativa</h3><p>Propuesta para la asignatura <strong>Actividad matemática como asunto de enseñanza (AMAE)</strong>, Profesorado Universitario en Matemática, Universidad Nacional del Comahue.</p><p>Diseño pedagógico a partir de la actividad y los materiales proporcionados por el profesor.</p></div>
+        <div><h3>Uso de inteligencia artificial generativa</h3><p>La inteligencia artificial generativa fue utilizada como apoyo para analizar, organizar y programar esta cápsula. La selección conceptual, las consignas y las decisiones didácticas deben ser revisadas por el equipo docente antes de su implementación. No se incorporaron autores ni referencias externos a los archivos proporcionados.</p><p>Las voces de los audios son sintéticas y el recurso musical es una composición instrumental generada específicamente para el proyecto.</p></div>
+      </div>
+
+      <div class="decision-diseno"><strong>Decisión de diseño:</strong> el PDF de la actividad también contiene, desde la página 8, una propuesta de construcción geométrica con GeoGebra. Esa sección no se integró porque no pertenece al foco de esta cápsula sobre racionales.</div>
+      <div class="grupo-botones centrado"><button type="button" class="boton primario" data-ir="mapa">Volver al mapa</button></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>AMAE · Universidad Nacional del Comahue · Cápsula de microaprendizaje</p>
+    <button type="button" class="boton-texto" data-ir="bibliografia">Bibliografía y declaración de IA</button>
+  </footer>
+
+  <div id="anuncio" class="anuncio" role="status" aria-live="polite" aria-atomic="true"></div>
+</body>
+</html>
