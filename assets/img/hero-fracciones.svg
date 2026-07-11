@@ -35,11 +35,19 @@
       <path d="M-45 0 h 90" stroke="#86a8de" stroke-width="8" stroke-linecap="round"/>
       <text y="98" font-size="20" fill="#173f87">cociente</text>
     </g>
-    <g transform="translate(620 450)">
+    <g transform="translate(620 440)">
       <circle r="72" fill="#ffffff" stroke="#2b65c8" stroke-width="4"/>
       <path d="M-42 18h84M-36 18v-14M0 18v-14M36 18v-14" stroke="#2b65c8" stroke-width="5"/>
       <circle cx="27" cy="18" r="9" fill="#f08a5d"/>
       <text y="98" font-size="20" fill="#173f87">medida</text>
+    </g>
+    <g transform="translate(140 440)">
+      <circle r="72" fill="#ffffff" stroke="#2b65c8" stroke-width="4"/>
+      <rect x="-60" y="-22" width="42" height="44" rx="8" fill="#86a8de"/>
+      <path d="M15 -22 h42 v 44 H15z" fill="#2b65c8"/>
+      <path d="M-9 0h23" stroke="#f08a5d" stroke-width="7" stroke-linecap="round"/>
+      <path d="M8 -10l12 10L8 10" fill="none" stroke="#f08a5d" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <text y="98" font-size="20" fill="#173f87">operador</text>
     </g>
     <g transform="translate(360 535)">
       <circle r="72" fill="#ffffff" stroke="#2b65c8" stroke-width="4"/>
@@ -55,14 +63,7 @@
       </g>
       <text y="98" font-size="20" fill="#173f87">razón</text>
     </g>
-    <g transform="translate(140 450)">
-      <circle r="72" fill="#ffffff" stroke="#2b65c8" stroke-width="4"/>
-      <rect x="-60" y="-22" width="42" height="44" rx="8" fill="#86a8de"/>
-      <path d="M15 -22 h42 v 44 H15z" fill="#2b65c8"/>
-      <path d="M-9 0h23" stroke="#f08a5d" stroke-width="7" stroke-linecap="round"/>
-      <path d="M8 -10l12 10L8 10" fill="none" stroke="#f08a5d" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-      <text y="98" font-size="20" fill="#173f87">operador</text>
-    </g>
+    
   </g>
 
 </svg>
