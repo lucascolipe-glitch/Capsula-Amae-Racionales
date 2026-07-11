@@ -41,7 +41,7 @@
       <circle cx="27" cy="18" r="9" fill="#f08a5d"/>
       <text y="98" font-size="20" fill="#173f87">medida</text>
     </g>
-    <g transform="translate(545 355)">
+    <g transform="translate(360 400)">
       <circle r="72" fill="#ffffff" stroke="#2b65c8" stroke-width="4"/>
       <g fill="#2b65c8"><circle cx="-30" cy="-10" r="9"/>
         <circle cx="-5" cy="-10" r="9"/>
@@ -55,7 +55,7 @@
       </g>
       <text y="98" font-size="20" fill="#173f87">razón</text>
     </g>
-    <g transform="translate(40 490)">
+    <g transform="translate(140 490)">
       <circle r="72" fill="#ffffff" stroke="#2b65c8" stroke-width="4"/>
       <rect x="-42" y="-22" width="42" height="44" rx="8" fill="#86a8de"/>
       <path d="M10 -22h42v44H10z" fill="#2b65c8"/>
