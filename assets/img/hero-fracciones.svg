@@ -55,7 +55,7 @@
       </g>
       <text y="98" font-size="20" fill="#173f87">razón</text>
     </g>
-    <g transform="translate(160 440)">
+    <g transform="translate(140 490)">
       <circle r="72" fill="#ffffff" stroke="#2b65c8" stroke-width="4"/>
       <rect x="-42" y="-22" width="42" height="44" rx="8" fill="#86a8de"/>
       <path d="M10 -22h42v44H10z" fill="#2b65c8"/>
